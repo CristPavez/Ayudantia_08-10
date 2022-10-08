@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+body .header {
+  padding: 20px;
+  display: flex;
+  background-color: lightblue;
+  justify-content: right;
+  gap: 20px;
+}
+body .header__element {
+  color: blue;
+}
+body .container-section__element {
+  background-color: red;
+  border: #000 5px dashed;
+}
+body .container-section__element--slider {
+  background-color: rgb(199, 51, 51);
+  height: 350px;
+  width: 100%;
+}
+body .container-section__element--slider .container-relative {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body .container-section__element--slider .container-relative .container-absolute {
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  height: 200px;
+  background-color: yellow;
+}
+body .container-section__element--texto {
+  color: brown;
+  height: 350px;
+  width: 100%;
+}
+body .container-section__element--texto p {
+  text-align: center;
+}
+body .container-section__element--columnas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 800px) {
+  body .container-section__element--columnas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 400px) {
+  body .container-section__element--columnas {
+    grid-template-columns: 1fr;
+  }
+}
+body .container-footer__element {
+  background-color: #000;
+  color: #fff;
+  height: 200px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
